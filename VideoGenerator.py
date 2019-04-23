@@ -101,7 +101,7 @@ class DataGenerator(keras.utils.Sequence):
             # NOTE: If you know the coordinates of the action tube (ROI) a priori, you should cut the frames like this:
             # Load ROI
             # addrROI =  self.path + '//ROI' + ID[len(self.path):-4] + '_roi.npy'
-            # at = np.load(addrROI) # at = (xmin,xmax,ymin,ymax)
+            # at = np.load(addrROI) # at = (xmin,ymin,xmin,ymax)
             # Cuts, adds padding (adds black borders to maintain the aspect ratio) and resample action tube
             # img2 = self.padborder(img[:,at[0]:at[2],at[1]:at[3],:], self.dim)
             
